@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Zonghao (Wade) Zhang</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/myself/favicon/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -41,14 +41,22 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        <figure class="avatar-box" style="overflow: hidden; border-radius: 50%; width: 200px; height: 200px;">
+          <img src="./assets/images/myself/avatar_zhang.jpg" alt="Wade Zhang" width="200" height="200"
+            style="border-radius: 50%; object-fit: cover; width: 100%; height: 100%; object-position: center top;">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Zonghao Zhang">Zonghao Zhang</h1>
+          <h1 class="name" title="Wade">Wade</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">
+            M.Sc.E. in Geomatics Engineering |
+            <br>
+            Geospatial Data Science | GIS |
+            <br>
+            Remote Sensing | Surveying
+          </p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -67,47 +75,48 @@
 
           <li class="contact-item">
 
-            <div class="icon-box">
+            <a href="mailto:zlfdodo@gmail.com" class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            </a>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:zlfdodo@gmail.com" class="contact-link">zlfdodo@gmail.com</a>
             </div>
 
           </li>
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+            <a href="https://www.linkedin.com/in/zonghao-wade-zhang-b097b1106/" class="icon-box" target="_blank"
+              rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/zonghao-wade-zhang-b097b1106/" class="contact-link" target="_blank"
+                rel="noopener">Zonghao Zhang</a>
             </div>
 
           </li>
 
           <li class="contact-item">
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+            <a href="https://github.com/zlfdodo" class="icon-box" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">GitHub</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <a href="https://github.com/zlfdodo" class="contact-link" target="_blank" rel="noopener">zlfdodo</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
@@ -116,14 +125,32 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Vancouver, BC, Canada</address>
             </div>
 
-          </li>
+          </li> -->
 
         </ul>
 
         <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+
+            <a href="./assets/files/CV_Zonghao_Zhang.pdf" class="icon-box" download>
+              <ion-icon name="document-outline"></ion-icon>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Resume</p>
+              <a href="./assets/files/CV_Zonghao_Zhang.pdf" class="contact-link" download>Download CV</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- <div class="separator"></div>
 
         <ul class="social-list">
 
@@ -145,7 +172,7 @@
             </a>
           </li>
 
-        </ul>
+        </ul> -->
 
       </div>
 
@@ -181,9 +208,9 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -205,21 +232,24 @@
 
         <header>
           <h2 class="h2 article-title">About me</h2>
+          <h4 class="h4 article-title">Geomatics Professional | Land Surveyor in Training | CASI Level 2 Snowboarding
+            Instructor</h4>
         </header>
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I'm a geomatics professional with expertise in GIS, surveying, and spatial data analysis.
+            With experience in the private sectors, I specialize in integrating geospatial technologies
+            to support decision-making, infrastructure planning, and environmental monitoring.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I hold a Master of Science in Geomatics Engineering from the University of Calgary and a Bachelor of Science
+            in Geomatics from BCIT.
+          </p>
+          <p>
+            My work has included projects in utility mapping, workflow automation, land development and infrastructure
+            where I have applied my skills in spatial data analysis, remote sensing, and surveying.
           </p>
         </section>
 
@@ -237,15 +267,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-map.png" alt="map icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Geospatial Solutions</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  High-quality spatial data analysis, mapping, and automation for land, environmental, and industrial
+                  applications.
                 </p>
               </div>
 
@@ -258,10 +288,11 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Web GIS Development</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Professional-grade development of interactive mapping applications using ArcGIS Online, Leaflet, and
+                  Flask.
                 </p>
               </div>
 
@@ -270,14 +301,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-satellite.png" alt="satellite icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Surveying & Field Data</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  PPrecise field surveys and GNSS data processing for cadastral and engineering projects.
                 </p>
               </div>
 
@@ -286,14 +317,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-ski-lift.png" alt="ski lift icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Snowboarding & Skiing</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Certified instructor with a passion for all-mountain freestyle snowboarding and teaching.
                 </p>
               </div>
 
@@ -308,7 +339,7 @@
           - testimonials
         -->
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -404,7 +435,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
 
         <!--
@@ -456,7 +487,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -500,7 +531,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -522,51 +553,53 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="hammer-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">GIS Specialist</h4>
 
-              <span>2007 — 2008</span>
+              <span>Global Raymac Surveys, Calgary, AB (Remote)</span>
+              <span>Sept. 2023 – Sept. 2024</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                - Developed Python Scripts for automating geospatial workflows, integrating data from multiple
+                sources, and improving project efficiency.
+                <br>- Managed Spatial Databases using ArcGIS Pro and SQL, ensuring accurate and reliable geospatial data
+                for environmental and cadastral projects.
+                <br>- Designed and maintained Web Mapping Applications using ESRI ArcGIS Online and Web Map Services
+                (WMS)
+                to support project-specific data visualization.
+                <br>- Utilized SDE database software for storing and serving spatial data to applications, maps, and
+                reports.
+                <br>- Produced high-quality data visualizations and cartographic products using ArcGIS Pro for client
+                deliverables in geotechnical and environmental projects.
+                <br>- Managed GNSS data post-processing, ensuring accurate positioning and data integrity for geospatial
+                projects.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">Survey Technologist – Land Surveyor in Training (LST)</h4>
 
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
+              <span>Matson Peck & Topliss (M.P.T. Engineering Co.), Richmond, BC</span>
+              <span>May 2018 – Mar. 2021</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                - Performed legal and construction surveys in the field using GNSS and Total Station equipment across
+                various urban development projects.
+                <br>- Conducted boundary retracements and topographic surveys, ensuring accurate field data collection
+                and site verification.
+                <br>- Assisted with processing field data and drafting legal survey plans using MicroSurvey CAD and
+                Leica Geo Office.
               </p>
 
             </li>
@@ -582,49 +615,39 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Master of Science in Geomatics Engineering (M.Sc.E)</h4>
 
-              <span>2015 — Present</span>
+              <span>University of Calgary</span>
+              <span>Sept. 2021 – Aug. 2023</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                - Developed simulation models using Python and the GAMA platform for optimizing fleet operations in
+                urban environments.
+                <br>- Analyzed geospatial datasets using open-source Python Library and built custom workflows to
+                automate data processing for traffic analysis and fleet management.
+                <br>- Awarded the Alberta Graduate Excellence Scholarship
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Geomatics (B.Sc)</h4>
 
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
+              <span>British Columbia Institute of Technology (BCIT)</span>
+              <span>2006 — 2007</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                - Earned 223.5 credit hours in total (Diploma: 143.5 / Degree: 80).
+                <br>- Capstone project: Tunneling surveying for Mount MacDonald, including least-square adjustments to
+                achieve precise geospatial data accuracy.
               </p>
 
             </li>
@@ -642,33 +665,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
+                <h5 class="h5">ESRI Products (ArcGIS Pro & ArcGIS Online)</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -681,12 +678,64 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
+                <h5 class="h5">Python </h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Survey & GNSS Data Collection and Processing</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GeoDatabases & Spatial Data Engine</h5>
                 <data value="50">50%</data>
               </div>
 
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">QGIS</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Trimble Business Center (TBC)</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
 
             </li>
@@ -713,7 +762,7 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <!-- <ul class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
@@ -731,7 +780,7 @@
               <button data-filter-btn>Web development</button>
             </li>
 
-          </ul>
+          </ul> -->
 
           <div class="filter-select-box">
 
@@ -769,164 +818,21 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="web gis">
+              <a href="https://esricanada-ce.github.io/appchallenge/2023/teams/ucalgary/GeoTrio/" target="_blank"
+                rel="noopener">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/myself/project-1.png" alt="GeoTrio" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">ECCE App Challenge 2023</h3>
 
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web GIS</p>
 
               </a>
             </li>
@@ -1146,16 +1052,17 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333119.02778761863!2d-123.06144685000001!3d49.28601475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5462ce9005f9dfa5%3A0xce9c6c979ef4fca6!2sMetro%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1749672594931!5m2!1sen!2sca"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
-        <section class="contact-form">
+        <!-- <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formsubmit.co/zlfdodo@gmail.com" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1172,7 +1079,7 @@
 
           </form>
 
-        </section>
+        </section> -->
 
       </article>
 
